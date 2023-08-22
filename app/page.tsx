@@ -13,7 +13,7 @@ import { Inter } from "@next/font/google";
 import CompanyItroduction from "components/CompanyIntroduction";
 import Values from "../components/Values/index";
 const inter = Inter({ subsets: ["latin"] });
-
+import CallToAction from "../components/CallToAction";
 export default function Home() {
   return (
     <>
@@ -24,7 +24,7 @@ export default function Home() {
       <Features />
       <Brands />
       <Testimonials />
-      <Contact />
+      <CallToAction />
     </>
   );
 }

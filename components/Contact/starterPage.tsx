@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { url } from "inspector";
 
-const Hero = () => {
+const StarterPage = () => {
   return (
     <>
       <section
@@ -18,27 +18,23 @@ const Hero = () => {
         /> */}
         <div className="columns-1">
           <div className="-mx-8 flex flex-wrap">
-            <div className=" w-full px-4 md:w-1/2 ">
+            <div className="w-full px-4 md:w-1/2">
               <div
                 className="wow fadeInUp mx-8 max-w-[800px] text-start md:mx-auto"
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-white dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Cost-effective ICT
+                  Contact us
                 </h1>
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-white dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  solutions for your
-                </h1>
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-white dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  business!
-                </h1>
+
                 <p className="mb-12 text-base font-medium !leading-relaxed text-body-color opacity-90 dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
-                  We provide efficient and effective technology solutions that
-                  help businesses achieve their objectives.
+                  The goal of IT services is to provide efficient and effective
+                  technology solutions that help businesses achieve their
+                  objectives.
                 </p>
                 <div className="w-full md:w-1/4">
                   <Link
-                    href="/#"
+                    href="#"
                     className="ease-in-up min-w-min  rounded-full bg-primary px-8 py-3 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
                   >
                     Discover more
@@ -67,4 +63,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default StarterPage;

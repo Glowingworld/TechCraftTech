@@ -21,10 +21,7 @@ export default function RootLayout({
 
       <body className="dark:bg-black">
         <Providers>
-          <div style={{ padding: "5%" }}>
-            <Header />
-          </div>
-
+          <Header />
           {children}
           <Footer />
           <ScrollToTop />

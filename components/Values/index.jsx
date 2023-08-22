@@ -27,16 +27,16 @@ const Values = () => {
         />
         <Group p="xl">
           <Grid>
-            <Grid.Col span={3}>
+            <Grid.Col xs={12} md={3}>
               <SingleValue />
             </Grid.Col>
-            <Grid.Col span={3}>
+            <Grid.Col xs={12} md={3}>
               <SingleValue />
             </Grid.Col>
-            <Grid.Col span={3}>
+            <Grid.Col xs={12} md={3}>
               <SingleValue />
             </Grid.Col>
-            <Grid.Col span={3}>
+            <Grid.Col xs={12} md={3}>
               <SingleValue />
             </Grid.Col>
           </Grid>

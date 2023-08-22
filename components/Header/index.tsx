@@ -38,8 +38,7 @@ const Header = () => {
   return (
     <>
       <header
-        style={{ overflow: "hidden" }}
-        className={`left-10 top-0 z-40 mr-10   flex w-full items-center bg-transparent ${
+        className={` top-0  z-40     flex w-full items-center bg-transparent ${
           sticky
             ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
             : "absolute"
@@ -115,16 +114,24 @@ const Header = () => {
                         ) : null}
                       </li>
                     ))}
+                    <li>
+                      <Link
+                        href="/contact"
+                        className="ease-in-up text-md  mt-3 rounded-md bg-primary px-4 py-2 font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:bg-primary md:px-9 md:py-2 md:text-base lg:px-6 xl:px-9"
+                      >
+                        Contact us
+                      </Link>
+                    </li>
                   </ul>
                 </nav>
               </div>
               <div className="flex items-center justify-end pl-5 pr-16 lg:pr-0">
-                <Link
-                  href="/signup"
-                  className="ease-in-up  rounded-md bg-primary px-8 py-3 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
+                {/* <Link
+                  href="/contact"
+                  className="ease-in-up  bg-inherit rounded-md px-1 py-1 text-sm font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:bg-primary md:px-9 md:py-2 md:text-base lg:px-6 xl:px-9"
                 >
                   Contact us
-                </Link>
+                </Link> */}
                 <div>
                   <ThemeToggler />
                 </div>
