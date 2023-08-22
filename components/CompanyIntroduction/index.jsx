@@ -67,6 +67,7 @@ const CompanyIntroduction = () => {
           paddingLeft: "10%",
           paddingTop: "5%",
           paddingBottom: "5%",
+          paddingRight: "10%",
         }}
       >
         <Grid align="center" gutterMd="xs">
