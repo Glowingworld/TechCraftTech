@@ -5,6 +5,7 @@ import {
   Container,
   Grid,
   Group,
+  LoadingOverlay,
   Text,
   TextInput,
   Textarea,
@@ -16,10 +17,7 @@ import { createClient } from "@supabase/supabase-js";
 import { useState } from "react";
 
 // Create a single supabase client for interacting with your database
-const supabase = createClient(
-  "https://chsvxbicdvwmkhfwxcad.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNoc3Z4YmljZHZ3bWtoZnd4Y2FkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5MjY3OTc3MSwiZXhwIjoyMDA4MjU1NzcxfQ.2Xnd8LYHGnxU89hs13YwyrnTfIzkqh-zW_z6Vk2yDcc"
-);
+
 const Contact = () => {
   const [size, setSize] = useState("");
   const [name, setName] = useState("");
@@ -27,8 +25,10 @@ const Contact = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [budget, setBudget] = useState("");
+  const [loading, setLoading] = useState(false);
   async function formHandler(e: any) {
     e.preventDefault();
+    setLoading(true);
     const { data, error } = await supabase
       .from("messages")
       .insert([
@@ -43,6 +43,14 @@ const Contact = () => {
         },
       ])
       .select();
+    setLoading(false);
+
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+    setSize("");
+    setBudget("");
   }
   return (
     <>
@@ -72,6 +80,8 @@ const Contact = () => {
 
         <Grid p="xl">
           <Grid.Col md={8}>
+            <LoadingOverlay visible={loading} overlayBlur={2} />
+
             <form>
               <Grid>
                 <Grid.Col md={6}>
