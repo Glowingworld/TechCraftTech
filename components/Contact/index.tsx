@@ -1,6 +1,7 @@
 "use client";
 import {
   Autocomplete,
+  Box,
   Button,
   Container,
   Grid,
@@ -80,90 +81,91 @@ const Contact = () => {
 
         <Grid p="xl">
           <Grid.Col md={8}>
-            <LoadingOverlay visible={loading} overlayBlur={2} />
+            <Box pos="relative">
+              <LoadingOverlay visible={loading} overlayBlur={2} />
+              <form>
+                <Grid>
+                  <Grid.Col md={6}>
+                    <TextInput
+                      value={name}
+                      onChange={(e) => {
+                        setName(e.target.value);
+                      }}
+                      size="lg"
+                      radius="lg"
+                      placeholder="Your name"
+                      withAsterisk
+                    />
+                  </Grid.Col>
+                  <Grid.Col md={6}>
+                    <TextInput
+                      value={email}
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                      }}
+                      size="lg"
+                      radius="lg"
+                      placeholder="Your Email"
+                      withAsterisk
+                    />
+                  </Grid.Col>
+                </Grid>
+                <Grid pb="lg" pt="lg">
+                  <Grid.Col md={5}>
+                    <TextInput
+                      value={phone}
+                      onChange={(e) => {
+                        setPhone(e.target.value);
+                      }}
+                      size="lg"
+                      radius="lg"
+                      placeholder="Your Phone"
+                      withAsterisk
+                    />
+                  </Grid.Col>
+                  <Grid.Col md={4}>
+                    <Autocomplete
+                      value={size}
+                      onChange={(e) => {}}
+                      size="lg"
+                      radius="xl"
+                      placeholder="Company size"
+                      data={["React", "Angular", "Svelte", "Vue"]}
+                    />
+                  </Grid.Col>
+                  <Grid.Col md={3}>
+                    <Autocomplete
+                      value={budget}
+                      onChange={(e) => {}}
+                      size="lg"
+                      radius="xl"
+                      placeholder="Budget"
+                      data={["React", "Angular", "Svelte", "Vue"]}
+                    />
+                  </Grid.Col>
+                </Grid>
+                <Textarea
+                  value={message}
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                  }}
+                  placeholder="Your message"
+                  size="xl"
+                />
 
-            <form>
-              <Grid>
-                <Grid.Col md={6}>
-                  <TextInput
-                    value={name}
-                    onChange={(e) => {
-                      setName(e.target.value);
-                    }}
-                    size="lg"
-                    radius="lg"
-                    placeholder="Your name"
-                    withAsterisk
-                  />
-                </Grid.Col>
-                <Grid.Col md={6}>
-                  <TextInput
-                    value={email}
-                    onChange={(e) => {
-                      setEmail(e.target.value);
-                    }}
-                    size="lg"
-                    radius="lg"
-                    placeholder="Your Email"
-                    withAsterisk
-                  />
-                </Grid.Col>
-              </Grid>
-              <Grid pb="lg" pt="lg">
-                <Grid.Col md={5}>
-                  <TextInput
-                    value={phone}
-                    onChange={(e) => {
-                      setPhone(e.target.value);
-                    }}
-                    size="lg"
-                    radius="lg"
-                    placeholder="Your Phone"
-                    withAsterisk
-                  />
-                </Grid.Col>
-                <Grid.Col md={4}>
-                  <Autocomplete
-                    value={size}
-                    onChange={(e) => {}}
-                    size="lg"
+                <Group position="right" pt="xl">
+                  <Button
+                    onClick={formHandler}
+                    style={{ backgroundColor: "#1545B3", color: "white" }}
+                    color="indigo"
                     radius="xl"
-                    placeholder="Company size"
-                    data={["React", "Angular", "Svelte", "Vue"]}
-                  />
-                </Grid.Col>
-                <Grid.Col md={3}>
-                  <Autocomplete
-                    value={budget}
-                    onChange={(e) => {}}
                     size="lg"
-                    radius="xl"
-                    placeholder="Budget"
-                    data={["React", "Angular", "Svelte", "Vue"]}
-                  />
-                </Grid.Col>
-              </Grid>
-              <Textarea
-                value={message}
-                onChange={(e) => {
-                  setMessage(e.target.value);
-                }}
-                placeholder="Your message"
-                size="xl"
-              />
-
-              <Group position="right" pt="xl">
-                <Button
-                  onClick={formHandler}
-                  style={{ backgroundColor: "#1545B3", color: "white" }}
-                  color="indigo"
-                  radius="xl"
-                  size="lg"
-                >
-                  Send Message
-                </Button>
-              </Group>
-            </form>
+                  >
+                    Send Message
+                  </Button>
+                </Group>
+              </form>
+            </Box>
           </Grid.Col>
           <Grid.Col xs={12} md={4}>
             <Group align="center">
