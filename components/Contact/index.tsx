@@ -18,7 +18,10 @@ import { createClient } from "@supabase/supabase-js";
 import { useState } from "react";
 
 // Create a single supabase client for interacting with your database
-
+const supabase = createClient(
+  "https://chsvxbicdvwmkhfwxcad.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNoc3Z4YmljZHZ3bWtoZnd4Y2FkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5MjY3OTc3MSwiZXhwIjoyMDA4MjU1NzcxfQ.2Xnd8LYHGnxU89hs13YwyrnTfIzkqh-zW_z6Vk2yDcc"
+);
 const Contact = () => {
   const [size, setSize] = useState("");
   const [name, setName] = useState("");
@@ -130,7 +133,7 @@ const Contact = () => {
                       size="lg"
                       radius="xl"
                       placeholder="Company size"
-                      data={["React", "Angular", "Svelte", "Vue"]}
+                      data={["Large", "Medium", "Small"]}
                     />
                   </Grid.Col>
                   <Grid.Col md={3}>
@@ -140,7 +143,7 @@ const Contact = () => {
                       size="lg"
                       radius="xl"
                       placeholder="Budget"
-                      data={["React", "Angular", "Svelte", "Vue"]}
+                      data={["1M-5M", "5M-10M", "10M-100M"]}
                     />
                   </Grid.Col>
                 </Grid>

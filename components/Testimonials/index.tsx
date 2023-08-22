@@ -80,8 +80,8 @@ const Testimonials = () => {
               { maxWidth: "md", slideSize: "50%" },
             ]}
           >
-            {testimonialData.map((testimonial) => (
-              <Carousel.Slide>
+            {testimonialData.map((testimonial, index) => (
+              <Carousel.Slide key={index}>
                 <SingleTestimonial
                   key={testimonial.id}
                   testimonial={testimonial}

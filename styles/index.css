@@ -32,29 +32,9 @@
   }
 }
 
-.background {
-  /* background: url("../public/images/hero/bg.png"),
-    lightgray 50% / cover no-repeat; */
-
-  /* border-radius: 24px;
-  border: 1px solid var(--white, #fdfdfd); */
-  background: linear-gradient(
-      0deg,
-      rgba(9, 25, 62, 0.9) 0%,
-      rgba(9, 25, 62, 0.9) 100%
-    ),
-    url("/"), lightgray 50% / cover no-repeat;
-  box-shadow: 0px 0px 10px 0px rgba(3, 95, 175, 0.1);
-}
-
-.callToAcrion {
+.callToAction {
   border-radius: 24px;
+  height: 410px;
   border: 1px solid var(--white, #fdfdfd);
-  background: linear-gradient(
-      0deg,
-      rgba(9, 25, 62, 0.9) 0%,
-      rgba(9, 25, 62, 0.9) 100%
-    ),
-    url("/"), lightgray 50% / cover no-repeat;
   box-shadow: 0px 0px 10px 0px rgba(3, 95, 175, 0.1);
 }

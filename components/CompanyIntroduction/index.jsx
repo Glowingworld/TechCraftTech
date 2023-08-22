@@ -145,7 +145,7 @@ let Vision = () => {
               width={44}
               height={44}
               alt="holla"
-              src="/images/intro/Frame.svg"
+              src="/images/intro/Frame (1).svg"
             />
           </Group>
           <Group>
@@ -175,7 +175,7 @@ let Mission = () => {
             width={44}
             height={44}
             alt="img"
-            src="/images/intro/Frame (1).svg"
+            src="/images/intro/Frame.svg"
           />
         </Group>
         <Group>

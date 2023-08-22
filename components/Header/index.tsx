@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import { Container } from "@mantine/core";
 
 const Header = () => {
   // Navbar toggle
@@ -38,7 +39,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={` top-0  z-40     flex w-full items-center bg-transparent ${
+        className={` top-0  z-40 flex w-full items-center bg-transparent ${
           sticky
             ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
             : "absolute"

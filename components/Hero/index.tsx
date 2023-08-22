@@ -7,15 +7,13 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="from-lightgray background style= relative   z-10 overflow-hidden bg-gradient-to-r  via-transparent     to-[lightgray] pb-16  pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
-        style={{ backgroundImage: url() }}
+        className="from-lightgray  style= relative   z-10 overflow-hidden bg-gradient-to-r  via-transparent     to-[lightgray] pb-16  pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        style={{
+          backgroundImage:
+            "linear-gradient(250deg, rgba(9, 25, 62, 0.70)  0%, #062343 95%), url(/images/hero/bg.png)",
+          backgroundSize: "cover",
+        }}
       >
-        {/* <Image
-          src="/images/hero/bg.png"
-          fill
-          alt="background"
-          className="blur"
-        /> */}
         <div className="columns-1">
           <div className="-mx-8 flex flex-wrap">
             <div className=" w-full px-4 md:w-1/2 ">
@@ -23,6 +21,9 @@ const Hero = () => {
                 className="wow fadeInUp mx-8 max-w-[800px] text-start md:mx-auto"
                 data-wow-delay=".2s"
               >
+                <p className="mb-5 text-sm font-bold leading-tight text-white dark:text-white sm:text-4xl sm:leading-tight md:text-sm md:leading-tight">
+                  WELCOME TO COMPANY
+                </p>
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-white dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                   Cost-effective ICT
                 </h1>

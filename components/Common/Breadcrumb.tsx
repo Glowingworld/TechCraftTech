@@ -32,7 +32,7 @@ const Breadcrumb = ({
                     >
                       Home
                     </Link>
-                    <span className="mr-3 block h-2 w-2 rotate-45 border-t-2 border-r-2 border-body-color"></span>
+                    <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
                   </li>
                   <li className="text-base font-medium text-primary">
                     {pageName}
@@ -43,7 +43,7 @@ const Breadcrumb = ({
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <span className="absolute top-0 left-0 z-[-1]">
             <svg
               width="287"
@@ -116,7 +116,7 @@ const Breadcrumb = ({
               </defs>
             </svg>
           </span>
-        </div>
+        </div> */}
       </section>
     </>
   );

@@ -5,7 +5,14 @@ import { Button, Container, Flex, Group, Highlight, Text } from "@mantine/core";
 const CallToAction = () => {
   return (
     <div style={{ padding: "5%" }}>
-      <div className="callToAcrion">
+      <div
+        style={{
+          backgroundImage:
+            "linear-gradient(0deg, rgba(9, 25, 62, 0.90) 0%, rgba(9, 25, 62, 0.90) 100%), url(/images/callToAction/rec4.jpeg)",
+          backgroundSize: "cover",
+        }}
+        className="callToAction"
+      >
         <Group position="center" p="xl">
           <Text fz={40} fw={500} color="white" align="center" pt="xl">
             <Highlight highlight={["s"]}>
@@ -24,8 +31,8 @@ const CallToAction = () => {
         >
           <p>
             Our team of experts is here to guide you through every step of your
-            project. Whether you're just getting started or need assistance with
-            a specific phase, we've got you covered
+            project. Whether you{`&#39`}re just getting started or need
+            assistance with a specific phase, we{`&#39`}ve got you covered
           </p>
         </Container>
 

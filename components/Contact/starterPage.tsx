@@ -8,14 +8,12 @@ const StarterPage = () => {
       <section
         id="home"
         className="from-lightgray background style= relative   z-10 overflow-hidden bg-gradient-to-r  via-transparent     to-[lightgray] pb-16  pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
-        style={{ backgroundImage: url() }}
+        style={{
+          backgroundImage:
+            "linear-gradient(250deg, rgba(9, 25, 62, 0.70)  0%, #062343 95%), url(/images/hero/bg.png)",
+          backgroundSize: "cover",
+        }}
       >
-        {/* <Image
-          src="/images/hero/bg.png"
-          fill
-          alt="background"
-          className="blur"
-        /> */}
         <div className="columns-1">
           <div className="-mx-8 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2">
