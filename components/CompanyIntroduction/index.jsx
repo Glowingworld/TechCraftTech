@@ -159,6 +159,10 @@ let Vision = () => {
               To be a technology company that creates digital solutions that
               solve problems in our society
             </Text>
+            <Text color="#636363" fz={18}>
+              To be a technology company that creates digital solutions that
+              solve problems in our society
+            </Text>
           </Group>
         </Card>
       </Group>
