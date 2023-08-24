@@ -38,11 +38,11 @@ const Contact = () => {
       .insert([
         {
           name: name,
-          size: "3",
+          size: size,
           email: email,
           phone: phone,
           message: message,
-          budget: "23",
+          budget: budget,
           readStatus: false,
         },
       ])
@@ -129,7 +129,7 @@ const Contact = () => {
                   <Grid.Col md={4}>
                     <Autocomplete
                       value={size}
-                      onChange={(e) => {}}
+                      onChange={setSize}
                       size="lg"
                       radius="xl"
                       placeholder="Company size"
@@ -139,7 +139,7 @@ const Contact = () => {
                   <Grid.Col md={3}>
                     <Autocomplete
                       value={budget}
-                      onChange={(e) => {}}
+                      onChange={setBudget}
                       size="lg"
                       radius="xl"
                       placeholder="Budget"
