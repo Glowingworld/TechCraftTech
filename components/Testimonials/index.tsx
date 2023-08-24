@@ -8,56 +8,29 @@ import { Carousel } from "@mantine/carousel";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Nathan Feng",
+    designation: "Co-Founder at Hekima Ni Uhuru",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
+      "The service is simply amazing! I'm not just talking about the quality of the product, I'm also talking about the communication and the desire for me to be satisfied. A pleasure to work with, I will continue to work with them many times. Thanks!",
+    image: "/images/testimonials/udsm.png",
     star: 5,
   },
   {
-    id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    id: 1,
+    name: "Nathan Feng",
+    designation: "Co-Founder at Hekima Ni Uhuru",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
+      "The service is simply amazing! I'm not just talking about the quality of the product, I'm also talking about the communication and the desire for me to be satisfied. A pleasure to work with, I will continue to work with them many times. Thanks!",
+    image: "/images/testimonials/udsm.png",
     star: 5,
   },
   {
-    id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    id: 1,
+    name: "Nathan Feng",
+    designation: "Co-Founder at Hekima Ni Uhuru",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
-    star: 5,
-  },
-  {
-    id: 4,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
-    star: 5,
-  },
-  {
-    id: 5,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
-    star: 5,
-  },
-  {
-    id: 6,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+      "The service is simply amazing! I'm not just talking about the quality of the product, I'm also talking about the communication and the desire for me to be satisfied. A pleasure to work with, I will continue to work with them many times. Thanks!",
+    image: "/images/testimonials/udsm.png",
     star: 5,
   },
 ];
