@@ -43,7 +43,7 @@ const Hero = () => {
                 </p>
                 <div className="w-full md:w-1/4">
                   <Link
-                    href="/#"
+                    href="/about"
                     className="ease-in-up min-w-min  rounded-full bg-primary px-8 py-3 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
                   >
                     Discover more

@@ -1,6 +1,7 @@
 "use client";
 
 import { Button, Container, Flex, Group, Highlight, Text } from "@mantine/core";
+import Link from "next/link";
 
 const CallToAction = () => {
   return (
@@ -37,14 +38,16 @@ const CallToAction = () => {
         </Container>
 
         <Group position="center" pt="xl" pb="xl">
-          <Button
-            className="rounded-lg bg-primary"
-            variant="filled"
-            size="lg"
-            color="green"
-          >
-            Contact us
-          </Button>
+          <Link href="/contact">
+            <Button
+              className="rounded-lg bg-primary"
+              variant="filled"
+              size="lg"
+              color="green"
+            >
+              Contact us
+            </Button>
+          </Link>
         </Group>
       </div>
     </div>
